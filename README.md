@@ -1,24 +1,71 @@
 # json-server-base
 
-Esse é o repositório com a base de JSON-Server + JSON-Server-Auth já configurada, feita para ser usada no desenvolvimento das API's nos Capstones do Q2.
+Esse é o repositório com a base de JSON-Server + JSON-Server-Auth já configurada,
 
 ## Endpoints
 
-Assim como a documentação do JSON-Server-Auth traz (https://www.npmjs.com/package/json-server-auth), existem 3 endpoints que podem ser utilizados para cadastro e 2 endpoints que podem ser usados para login.
+A api tem um total de 5 endpoints, e tem o objetivo de criar uma lista de produtos para a Hamburgeria e adicionar itens ao carrinho
 
 ### Cadastro
 
-POST /register <br/>
-POST /signup <br/>
-POST /users
-
-Qualquer um desses 3 endpoints irá cadastrar o usuário na lista de "Users", sendo que os campos obrigatórios são os de email e password.
-Você pode ficar a vontade para adicionar qualquer outra propriedade no corpo do cadastro dos usuários.
-
+POST /register
 
 ### Login
 
-POST /login <br/>
-POST /signin
+POST /login
 
-Qualquer um desses 2 endpoints pode ser usado para realizar login com um dos usuários cadastrados na lista de "Users"
+## Products
+
+Neste endpoint é possivel visualizar todos os produtos disponiveis.
+
+`GET- /products`
+
+Authorization: ` Bearer Token`
+
+`FORMATO DA RESPOSTA - STATUS 201`
+
+```json
+[
+  {
+    "name": "Hamburger",
+    "category": "Sanduiche",
+    "image": "https://www.pngall.com/wp-content/uploads/5/Hamburger-PNG-Free-Image.png",
+    "price": "14,00"
+  },
+  {
+    "name": "X-Burguer",
+    "category": "Sanduiche",
+    "image": "https://www.pngall.com/wp-content/uploads/5/Fast-Food-Tofu-Burger-PNG-Free-Download.png",
+    "price": "16,00"
+  }
+]
+```
+
+Token necessário :
+
+`FORMATO DA RESPOSTA - STATUS 401`
+
+```json
+"Missing token"
+```
+
+`GET- /cart?userId=1`
+
+Authorization: ` Bearer Token`
+
+`FORMATO DA RESPOSTA - STATUS 201`
+
+```
+json
+[
+  {
+    "name": "Hamburger",
+    "category": "Sanduiche",
+    "image": "https://www.pngall.com/wp-content/uploads/5/Hamburger-PNG-Free-Image.png",
+    "price": "14,00",
+    "userId": 1,
+    "id": 1
+
+  }
+]
+```
