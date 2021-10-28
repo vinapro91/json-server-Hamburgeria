@@ -1,0 +1,78 @@
+{
+  "users": [
+    {
+      "email": "kenzinho@mail.com",
+      "password": "$2a$10$YQiiz0ANVwIgpOjYXPxc0O9H2XeX3m8OoY1xk7OGgxTnOJnsZU7FO",
+      "name": "Kenzinho",
+      "id": 1
+    }
+  ],
+  "products": [
+    {
+      "name": "Hamburger",
+      "category": "Sanduiche",
+      "image": "https://www.pngall.com/wp-content/uploads/5/Hamburger-PNG-Free-Image.png",
+      "price": "14,00"
+    },
+    {
+      "name": "X-Burguer",
+      "category": "Sanduiche",
+      "image": "https://www.pngall.com/wp-content/uploads/5/Fast-Food-Tofu-Burger-PNG-Free-Download.png",
+      "price": "16,00"
+    },
+    {
+      "name": "Trio Big Kenzie",
+      "category": "Combo",
+      "image": "https://www.pngall.com/wp-content/uploads/5/Fast-Food-Tofu-Burger-PNG.png",
+      "price": "26,00"
+    },
+    {
+      "name": "Combo Tacos",
+      "category": "Combo",
+      "image": "https://www.pngall.com/wp-content/uploads/4/Taco-PNG-Photo.png",
+      "price": "26,00"
+    },
+    {
+      "name": "Summer Drink",
+      "category": "Bebidas",
+      "image": "https://www.pngall.com/wp-content/uploads/8/Fruit-Soda-Transparent.png",
+      "price": "12,00"
+    },
+    {
+      "name": "Coca-Cola",
+      "category": "Bebidas",
+      "image": "https://www.pngall.com/wp-content/uploads/8/Coca-Coal-Soda-PNG-Free-Download.png",
+      "price": "7,00"
+    },
+    {
+      "name": "Milshake Chocolate",
+      "category": "Sobremesa",
+      "image": "https://www.pngall.com/wp-content/uploads/5/Chocolate-Milkshake.png",
+      "price": "18,00"
+    },
+    {
+      "name": "MilkShake Morango",
+      "category": "Sobremesa",
+      "image": "https://www.pngall.com/wp-content/uploads/5/Strawberry-Milkshake-PNG-Image.png",
+      "price": "18,00"
+    }
+  ],
+  "cart": [
+    {
+      "name": "Hamburger",
+      "category": "Sanduiche",
+      "image": "https://www.pngall.com/wp-content/uploads/5/Hamburger-PNG-Free-Image.png",
+      "price": "14,00",
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "name": "Hamburger",
+      "category": "Sanduiche",
+      "image": "https://www.pngall.com/wp-content/uploads/5/Hamburger-PNG-Free-Image.png",
+      "price": "14,00",
+      "userId": 2,
+      "id": 2
+    }
+  ]
+}
