@@ -73,6 +73,14 @@
       "price": "14,00",
       "userId": 2,
       "id": 2
+    },
+    {
+      "name": "Hamburger",
+      "category": "Sanduiche",
+      "image": "https://www.pngall.com/wp-content/uploads/5/Hamburger-PNG-Free-Image.png",
+      "price": "14,00",
+      "userId": 1,
+      "id": 3
     }
   ]
 }
